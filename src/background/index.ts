@@ -1,8 +1,4 @@
-import { type MessageType } from '../constant'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// import preload from '../contents/preload?script'
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// import switchTheme from '../contents?script'
+import { MessageType } from '../constant'
 
 chrome.runtime.onInstalled.addListener(() => {})
 
@@ -19,8 +15,10 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   // const senderId = sender.tab?.id
   // const payload = request.payload
 
-  // switch (request.type) {
-  //   case MessageType.UpdateDomain:
-  // }
+  switch (request.type) {
+    case MessageType.OpenOptions:
+      chrome.tabs.create({ url: 'options.html' })
+      break
+  }
   sendResponse()
 })

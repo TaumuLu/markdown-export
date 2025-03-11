@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Markdown 导出",
+    "description": "名称"
+  },
+  "extDescription": {
+    "message": "将网页导出为 Markdown 格式，可预览编辑下载",
+    "description": "描述"
+  }
+}

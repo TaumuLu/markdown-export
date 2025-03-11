@@ -1,31 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "Markdown Export",
+  "name": "__MSG_extName__",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
   "version": "1.0.0",
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "popup.html"
   },
+  "options_page": "options.html",
   "background": {
     "service_worker": "src/background/index.ts"
   },
   "permissions": ["activeTab", "storage", "scripting", "tabs"],
   "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; media-src *"
-  },
-  "web_accessible_resources": [
-    {
-      "resources": [
-        "*.html",
-        "icons/*",
-        "images/*",
-        "fonts/*",
-        "assets/*",
-        "html/*",
-        "js/*",
-        "lib/*",
-        "css/*"
-      ],
-      "matches": ["<all_urls>"]
-    }
-  ]
+  }
 }

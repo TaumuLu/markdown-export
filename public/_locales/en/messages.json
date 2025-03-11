@@ -1,0 +1,10 @@
+{
+  "extName": {
+    "message": "Markdown Export",
+    "description": "name"
+  },
+  "extDescription": {
+    "message": "Export web pages to Markdown format, preview, edit and download",
+    "description": "desc"
+  }
+}

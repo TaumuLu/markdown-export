@@ -1,6 +1,7 @@
 lib
 backup
 dist
+public
 
 !.lintstagedrc.js
 !.prettierrc.js
